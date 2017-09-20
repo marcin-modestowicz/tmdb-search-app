@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown component should hide options when list is not active 1`] = `
+<div
+  className="root"
+>
+  <div
+    onClick={[Function]}
+    role="button"
+  >
+    one
+  </div>
+</div>
+`;
+
+exports[`Dropdown component should hide options when option is chosen 1`] = `
+<div
+  className="root"
+>
+  <div
+    onClick={[Function]}
+    role="button"
+  >
+    one
+  </div>
+</div>
+`;
+
+exports[`Dropdown component should render without options 1`] = `
+<div
+  className="root"
+>
+  <div
+    onClick={[Function]}
+    role="button"
+  >
+    one
+  </div>
+</div>
+`;
+
+exports[`Dropdown component should show options when clicked 1`] = `
+<div
+  className="root active"
+>
+  <div
+    onClick={[Function]}
+    role="button"
+  >
+    one
+  </div>
+  <ul
+    className="options"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <DropdownOption
+      key="one"
+      label="One"
+      onClick={[Function]}
+      value="one"
+    />
+    <DropdownOption
+      key="two"
+      label="Two"
+      onClick={[Function]}
+      value="two"
+    />
+  </ul>
+</div>
+`;

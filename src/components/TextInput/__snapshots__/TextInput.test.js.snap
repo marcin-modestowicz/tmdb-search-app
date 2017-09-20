@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput component should render active 1`] = `
+<div
+  className="root active"
+>
+  <input
+    autoCapitalize="on"
+    autoComplete="on"
+    autoCorrect="on"
+    autoFocus={false}
+    className="input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    placeholder=""
+    spellCheck={true}
+    tabIndex="0"
+    type="text"
+    value="one"
+  />
+</div>
+`;
+
+exports[`TextInput component should render inactive 1`] = `
+<div
+  className="root"
+>
+  <input
+    autoCapitalize="on"
+    autoComplete="on"
+    autoCorrect="on"
+    autoFocus={false}
+    className="input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    placeholder=""
+    spellCheck={true}
+    tabIndex="0"
+    type="text"
+    value="one"
+  />
+</div>
+`;
+
+exports[`TextInput component should render with icon 1`] = `
+<div
+  className="root"
+>
+  <input
+    autoCapitalize="on"
+    autoComplete="on"
+    autoCorrect="on"
+    autoFocus={false}
+    className="input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder=""
+    spellCheck={true}
+    tabIndex="0"
+    type="text"
+    value="one"
+  />
+  <svg>
+    <rect
+      height="10"
+      width="30"
+    />
+  </svg>
+</div>
+`;
