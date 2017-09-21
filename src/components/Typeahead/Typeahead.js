@@ -37,7 +37,7 @@ class Typeahead extends Component<Props> {
     reaction(
       () => this.value,
       async value => {
-        if (!this.isValueSet) {
+        if (value !== "" && !this.isValueSet) {
           this.suggestionsRequest = fromPromise(this.props.dataSource(value));
         }
       },
