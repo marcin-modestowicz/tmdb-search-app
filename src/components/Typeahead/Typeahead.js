@@ -8,12 +8,13 @@ import { observer } from "mobx-react";
 import type { FieldValue } from "../../types";
 import TypeaheadSuggestion from "./TypeaheadSuggestion";
 import TextInput from "../TextInput";
-import spinner from "./spinner.svg";
+import Spinner from "./spinner.svg";
 import styles from "./Typeahead.css";
 
 type Props = {
   value: any,
-  onChange: (value: string) => void,
+  onChange?: (value: string) => void,
+  onSelect?: (value: string) => void,
   dataSource: (value: string) => Promise<FieldValue[]>,
   placeholder?: string
 };
@@ -83,7 +84,9 @@ class Typeahead extends Component<Props> {
     this.isInputFocused = false;
 
     if (!this.isActive) {
-      this.setOutputValue(this.value);
+      if (this.props.onChange) {
+        this.props.onChange(this.value);
+      }
       this.resetSuggestions();
     }
   };
@@ -105,14 +108,16 @@ class Typeahead extends Component<Props> {
 
   @action
   handleChange = (value: string) => {
-    this.setInternalValue(value);
+    this.value = value;
     this.resetSuggestions();
   };
 
   @action
-  handleSelect = (value: string) => {
-    this.setInternalValue(value);
-    this.setOutputValue(value);
+  handleSelect = (suggestion: FieldValue) => {
+    this.value = suggestion.value;
+    if (this.props.onSelect) {
+      this.props.onSelect(suggestion);
+    }
     this.resetSuggestions();
     this.isListFocused = false;
   };
@@ -120,14 +125,6 @@ class Typeahead extends Component<Props> {
   @action
   resetSuggestions = () => {
     this.suggestionsRequest = null;
-  };
-
-  setInternalValue = (value: string) => {
-    this.value = value;
-  };
-
-  setOutputValue = (value: string) => {
-    this.props.onChange(value);
   };
 
   render() {
@@ -145,7 +142,7 @@ class Typeahead extends Component<Props> {
           autocorrect="off"
           autocapitalize="off"
           spellcheck={false}
-          icon={this.isLoading ? <img src={spinner} /> : null}
+          icon={this.isLoading ? <Spinner /> : null}
         />
         {this.hasSuggestions && (
           <ul
@@ -155,7 +152,7 @@ class Typeahead extends Component<Props> {
           >
             {this.suggestions.map(suggestion => (
               <Typeahead.Suggestion
-                key={suggestion.value}
+                key={suggestion.id}
                 suggestion={suggestion}
                 searchFor={this.value}
                 onClick={this.handleSelect}

@@ -13,7 +13,7 @@ import styles from "./Typeahead.css";
 type Props = {
   suggestion: FieldValue,
   searchFor: string,
-  onClick: (suggestion: string) => void
+  onClick: (suggestion: FieldValue) => void
 };
 
 @observer
@@ -21,7 +21,7 @@ class TypeaheadSuggestion extends Component<Props> {
   props: Props;
 
   handleClick = () => {
-    this.props.onClick(this.props.suggestion.value);
+    this.props.onClick(this.props.suggestion);
   };
 
   renderSuggestion = () => {
