@@ -1,5 +1,4 @@
 // @flow
-
 import React from "react";
 import { observable } from "mobx";
 import { Observer } from "mobx-react";

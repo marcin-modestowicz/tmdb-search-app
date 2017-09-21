@@ -1,14 +1,9 @@
 // @flow
-
 import React, { Component } from "react";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
 import type { FieldValue } from "../../types";
 import styles from "./Typeahead.css";
-
-// Static element with role button can handle interactions, but there's a bug in eslint
-// plugin https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/214
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 
 type Props = {
   suggestion: FieldValue,
