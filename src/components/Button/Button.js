@@ -3,10 +3,8 @@
 import React, { Component } from "react";
 import styles from "./Button.css";
 
-/* global React$Element */
-
 type Props = {
-  children: React$Element<*>,
+  children: any,
   onClick: () => void
 };
 
