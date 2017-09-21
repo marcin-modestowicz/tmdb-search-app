@@ -114,7 +114,7 @@ class Typeahead extends Component<Props> {
 
   @action
   handleSelect = (suggestion: FieldValue) => {
-    this.value = suggestion.value;
+    this.value = suggestion.label;
     if (this.props.onSelect) {
       this.props.onSelect(suggestion);
     }

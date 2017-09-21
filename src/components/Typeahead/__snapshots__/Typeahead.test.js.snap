@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typeahead component should render with suggestions 1`] = `
+<div
+  className="root"
+>
+  <TextInput
+    autoFocus={false}
+    autocapitalize="off"
+    autocomplete="off"
+    autocorrect="off"
+    icon={null}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Search"
+    spellcheck={false}
+    value="one"
+  />
+  <ul
+    className="suggestions"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <TypeaheadSuggestion
+      key="1"
+      onClick={[Function]}
+      searchFor="one"
+      suggestion={
+        Object {
+          "id": "1",
+          "label": "Test1",
+          "value": "test1",
+        }
+      }
+    />
+    <TypeaheadSuggestion
+      key="2"
+      onClick={[Function]}
+      searchFor="one"
+      suggestion={
+        Object {
+          "id": "2",
+          "label": "Test2",
+          "value": "test2",
+        }
+      }
+    />
+  </ul>
+</div>
+`;
+
+exports[`Typeahead component should render without suggestions 1`] = `
+<div
+  className="root"
+>
+  <TextInput
+    autoFocus={false}
+    autocapitalize="off"
+    autocomplete="off"
+    autocorrect="off"
+    icon={null}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Search"
+    spellcheck={false}
+    value="one"
+  />
+</div>
+`;
