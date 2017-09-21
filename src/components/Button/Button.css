@@ -1,15 +1,17 @@
 .root {
-  display: inline-block;
   padding: 0 0.5em;
   cursor: pointer;
   border-radius: 0.25em;
   font-family: sans-serif;
   background-color: cornflowerBlue;
+  border: 1px solid cornflowerBlue;
   color: white;
   font-size: 1em;
   line-height: 2em;
+  text-align: center;
 }
 
 .root:active {
   background-color: royalBlue;
+  border-color: royalBlue;
 }

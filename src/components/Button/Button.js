@@ -5,7 +5,7 @@ import styles from "./Button.css";
 
 type Props = {
   children: any,
-  onClick: () => void
+  onClick: () => any
 };
 
 const Button = ({ children, onClick }: Props) => (
