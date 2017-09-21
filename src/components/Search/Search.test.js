@@ -86,7 +86,7 @@ describe("Search component", () => {
     });
   });
 
-  describe("method handleButtonClick", async () => {
+  describe("method handleButtonClick", () => {
     beforeEach(async () => {
       instance.searchValue = "John Doe";
       instance.searchScope = {
