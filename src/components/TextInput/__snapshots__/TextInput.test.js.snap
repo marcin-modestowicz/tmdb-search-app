@@ -21,6 +21,9 @@ exports[`TextInput component should render active 1`] = `
     type="text"
     value="one"
   />
+  <div
+    className="icon"
+  />
 </div>
 `;
 
@@ -45,6 +48,9 @@ exports[`TextInput component should render inactive 1`] = `
     type="text"
     value="one"
   />
+  <div
+    className="icon"
+  />
 </div>
 `;
 
@@ -67,11 +73,15 @@ exports[`TextInput component should render with icon 1`] = `
     type="text"
     value="one"
   />
-  <svg>
-    <rect
-      height="10"
-      width="30"
-    />
-  </svg>
+  <div
+    className="icon"
+  >
+    <svg>
+      <rect
+        height="10"
+        width="30"
+      />
+    </svg>
+  </div>
 </div>
 `;

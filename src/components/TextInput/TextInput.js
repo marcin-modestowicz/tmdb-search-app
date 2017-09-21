@@ -95,7 +95,7 @@ class TextInput extends Component<Props> {
           autoFocus={autoFocus}
           tabIndex="0"
         />
-        {icon}
+        <div className={styles.icon}>{icon}</div>
       </div>
     );
   }
