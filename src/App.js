@@ -1,18 +1,26 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import { observable, action } from "mobx";
+import { observer } from "mobx-react";
+import Search from "./components/Search";
 import styles from "./App.css";
 
+@observer
 class App extends Component {
+  @observable searchResults: Object;
+
+  @action
+  handleSearchResults = (results: Object) => {
+    this.searchResults = results;
+    console.log(results);
+  };
+
   render() {
     return (
       <div className={styles.root}>
         <div className={styles.header}>
-          <img src={logo} className={styles.logo} alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>The Movie Database Search</h2>
         </div>
-        <p className={styles.intro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Search onSearch={this.handleSearchResults} />
       </div>
     );
   }
