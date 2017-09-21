@@ -1,5 +1,7 @@
 .root {
-  margin: 2em 1em;
+  box-sizing: border-box;
+  margin-top: 1em;
+  padding: 1em 1em;
   width: 100%;
   max-width: 40em;
 }
@@ -16,11 +18,12 @@
   max-width: 185px;
 }
 
-.content div {
-  overflow: hidden;
-  margin: 0;
+.content ul {
+  padding: 0;
+  list-style-position: inside;
 }
 
 .content li {
   line-height: 1.5em;
+  margin-bottom: 0.5em;
 }
