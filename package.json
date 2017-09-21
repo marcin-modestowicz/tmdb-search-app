@@ -68,7 +68,8 @@
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "lint-staged": "^4.2.1",
-    "prettier": "^1.7.0"
+    "prettier": "^1.7.0",
+    "svg-react-loader": "^0.4.5"
   },
   "lint-staged": {
     "*.{js,json,css}": ["prettier --write", "git add"]
