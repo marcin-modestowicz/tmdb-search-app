@@ -31,20 +31,12 @@ const store = observable({
         setTimeout(() => {
           resolve([
             {
-              value: "Stranger Things",
-              label: "Stranger Things"
+              value: "suggestion1",
+              label: "Suggestion 1"
             },
             {
-              value: "Doctor Strange",
-              label: "Doctor Strange"
-            },
-            {
-              value: "Strangers with Candy",
-              label: "Strangers with Candy"
-            },
-            {
-              value: "Stranger than Fiction",
-              label: "Stranger than Fiction"
+              value: "suggestion2",
+              label: "Suggestion 2"
             }
           ]);
         }, 100);
