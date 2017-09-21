@@ -54,7 +54,7 @@ describe("Search component", () => {
     });
 
     test("should call onChange prop", () => {
-      expect(onSearch).toHaveBeenCalledWith(suggestion);
+      expect(onSearch).toHaveBeenCalledWith([suggestion]);
     });
   });
 
@@ -102,7 +102,7 @@ describe("Search component", () => {
     });
 
     test("should call onChange prop", () => {
-      expect(onSearch).toHaveBeenCalledWith(response);
+      expect(onSearch).toHaveBeenCalledWith(response.results);
     });
   });
 });
