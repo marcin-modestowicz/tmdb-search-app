@@ -2,16 +2,19 @@
 import request from "./request";
 
 class Api {
-  searchMulti = (query: string): Promise<string> => {
+  search(
+    query: string,
+    type: "multi" | "movie" | "person" | "tv"
+  ): Promise<Object> {
     return request
       .get({
-        url: "/search/multi",
+        url: `/search/${type}`,
         data: {
           query
         }
       })
-      .then((response: Response): Promise<string> => response.json());
-  };
+      .then(response => response.json());
+  }
 }
 
 export default new Api();

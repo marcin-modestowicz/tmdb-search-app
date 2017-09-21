@@ -15,7 +15,7 @@ describe("Api", () => {
         Promise.resolve(new Response(JSON.stringify(requestResult)))
       );
 
-      fetchedProducts = await api.searchMulti("query");
+      fetchedProducts = await api.search("query", "multi");
     });
 
     afterAll(() => {
