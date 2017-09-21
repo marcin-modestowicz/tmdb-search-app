@@ -20,6 +20,10 @@ describe("Search component", () => {
     apiMock.mockImplementation(() => Promise.resolve(response));
   });
 
+  afterAll(() => {
+    apiMock.mockRestore();
+  });
+
   beforeEach(() => {
     onSearch = jest.fn();
     search = shallow(<Search onSearch={onSearch} />);
