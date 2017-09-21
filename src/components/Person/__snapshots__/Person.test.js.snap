@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person component should render properly 1`] = `
+<div
+  className="root"
+>
+  <h3>
+    Sean Connery
+  </h3>
+  <div
+    className="content"
+  >
+    <Image
+      name="/ce84udJZ9QRSR44jxwK2apM3DM8.jpg"
+    />
+    <div>
+      <h4>
+        Known for:
+      </h4>
+      <ul>
+        <li
+          key="1"
+        >
+          Indiana Jones and the Last Crusade
+        </li>
+        <li
+          key="2"
+        >
+          The Rock
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
