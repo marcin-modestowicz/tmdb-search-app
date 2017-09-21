@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component should render properly 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="typeahead"
+  >
+    <Typeahead
+      dataSource={[Function]}
+      onChange={[Function]}
+      onSelect={[Function]}
+      placeholder="Search"
+      value=""
+    />
+  </div>
+  <div
+    className="options"
+  >
+    <div
+      className="dropdown"
+    >
+      <Dropdown
+        onSelect={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "All",
+              "value": "multi",
+            },
+            Object {
+              "label": "Movie",
+              "value": "movie",
+            },
+            Object {
+              "label": "TV Show",
+              "value": "tv",
+            },
+            Object {
+              "label": "People",
+              "value": "person",
+            },
+          ]
+        }
+        value="All"
+      />
+    </div>
+    <div
+      className="button"
+    >
+      <Button
+        onClick={[Function]}
+      >
+        Search
+      </Button>
+    </div>
+  </div>
+</div>
+`;
