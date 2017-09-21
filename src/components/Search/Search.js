@@ -11,7 +11,7 @@ import Button from "../Button";
 import styles from "./Search.css";
 
 type Props = {
-  onSearch: Object => void
+  onSearch: (Object[]) => void
 };
 
 @observer
@@ -49,7 +49,7 @@ class Search extends Component<Props> {
   @action
   handleSuggestionSelect = (suggestion: FieldValue) => {
     this.searchValue = suggestion.label;
-    this.props.onSearch(suggestion);
+    this.props.onSearch([suggestion]);
   };
 
   @action
@@ -76,7 +76,7 @@ class Search extends Component<Props> {
   handleButtonClick = async () => {
     const result = await api.search(this.searchValue, this.searchScope.value);
 
-    this.props.onSearch(result);
+    this.props.onSearch(result.results);
   };
 
   render() {
