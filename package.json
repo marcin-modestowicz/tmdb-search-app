@@ -27,7 +27,7 @@
     "flow-bin": "^0.54.1",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
-    "jest": "20.0.4",
+    "jest": "^21.1.0",
     "mobx": "^3.2.2",
     "mobx-react": "^4.2.2",
     "mobx-utils": "^3.1.1",
