@@ -39,8 +39,10 @@ class TextInput extends Component<Props> {
   @observable isFocused = false;
 
   handleChange = (event: SyntheticInputEvent<*>) => {
-    if (this.props.onChange) {
-      this.props.onChange(event.target.value);
+    const value = event.target.value;
+
+    if (this.props.onChange && value !== this.props.value) {
+      this.props.onChange(value);
     }
   };
 
