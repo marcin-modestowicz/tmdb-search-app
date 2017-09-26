@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .typeahead {
+    margin-right: 1em;
+    margin-left: 1em;
+    width: 12em;
+    margin-top: 1em;
+  }
+
+  .options {
+    margin-top: 1em;
+    display: flex;
+  }
+
+  .dropdown {
+    margin-right: 1em;
+    width: 6em;
+  }
+
+  .button {
+    width: 5em;
+  }
+}

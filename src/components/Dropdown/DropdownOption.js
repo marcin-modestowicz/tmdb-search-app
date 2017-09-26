@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import styles from "./Dropdown.css";
+import styles from "./Dropdown.scss";
 
 type Props = {
   value: string,

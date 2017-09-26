@@ -6,7 +6,7 @@ import { reaction, observable, action, computed } from "mobx";
 import { observer } from "mobx-react";
 import type { FieldValue } from "../../types";
 import DropdownOption from "./DropdownOption";
-import styles from "./Dropdown.css";
+import styles from "./Dropdown.scss";
 
 type Props = {
   value: any,

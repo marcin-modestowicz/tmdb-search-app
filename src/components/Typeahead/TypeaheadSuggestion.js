@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
 import type { FieldValue } from "../../types";
-import styles from "./Typeahead.css";
+import styles from "./Typeahead.scss";
 
 type Props = {
   suggestion: FieldValue,

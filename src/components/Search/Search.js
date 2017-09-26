@@ -7,7 +7,7 @@ import type { FieldValue } from "../../types";
 import Typeahead from "../Typeahead";
 import Dropdown from "../Dropdown";
 import Button from "../Button";
-import styles from "./Search.css";
+import styles from "./Search.scss";
 
 type Props = {
   onSearch: (Object[]) => void

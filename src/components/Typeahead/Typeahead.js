@@ -9,7 +9,7 @@ import type { FieldValue } from "../../types";
 import TypeaheadSuggestion from "./TypeaheadSuggestion";
 import TextInput from "../TextInput";
 import Spinner from "./spinner.svg";
-import styles from "./Typeahead.css";
+import styles from "./Typeahead.scss";
 
 type Props = {
   value: any,

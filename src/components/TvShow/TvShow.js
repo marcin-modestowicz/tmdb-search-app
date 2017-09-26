@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import Image from "../Image";
-import styles from "./TvShow.css";
+import styles from "./TvShow.scss";
 
 type Props = {
   tvShow: Object

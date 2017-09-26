@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import Image from "../Image";
-import styles from "./Person.css";
+import styles from "./Person.scss";
 
 type Props = {
   person: Object

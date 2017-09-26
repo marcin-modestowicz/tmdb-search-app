@@ -9,9 +9,9 @@
   font-size: 1em;
   line-height: 2em;
   text-align: center;
-}
 
-.root:active {
-  background-color: royalBlue;
-  border-color: royalBlue;
+  &:active {
+    background-color: royalBlue;
+    border-color: royalBlue;
+  }
 }

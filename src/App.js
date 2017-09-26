@@ -5,7 +5,7 @@ import Search from "./components/Search";
 import Movie from "./components/Movie";
 import TvShow from "./components/TvShow";
 import Person from "./components/Person";
-import styles from "./App.css";
+import styles from "./App.scss";
 
 @observer
 class App extends Component {

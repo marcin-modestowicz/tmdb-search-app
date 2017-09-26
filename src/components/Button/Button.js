@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import styles from "./Button.css";
+import styles from "./Button.scss";
 
 type Props = {
   children: any,

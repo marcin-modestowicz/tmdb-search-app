@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import Image from "../Image";
-import styles from "./Movie.css";
+import styles from "./Movie.scss";
 
 type Props = {
   movie: Object
