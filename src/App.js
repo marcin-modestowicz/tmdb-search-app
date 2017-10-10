@@ -26,13 +26,13 @@ class App extends Component {
         {this.searchResults &&
           this.searchResults.map(result => {
             if (result.title != null) {
-              return <Movie movie={result} />;
+              return <Movie key={result.id} movie={result} />;
             }
             if (result.name != null && result.overview != null) {
-              return <TvShow tvShow={result} />;
+              return <TvShow key={result.id} tvShow={result} />;
             }
             if (result.name != null) {
-              return <Person person={result} />;
+              return <Person key={result.id} person={result} />;
             }
           })}
       </div>
